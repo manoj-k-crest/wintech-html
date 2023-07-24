@@ -1,0 +1,9 @@
+{
+    "problemContent": "#whatsproblem",
+    "fixContent": "#howtofix",
+    "detailContent": "#givedetails",
+    "causesContent": "#whatcauses",
+    "repairContent": "#howtorepair",
+    "errorTitles": "#error",
+    "headTitle": "#headtitle"
+}
