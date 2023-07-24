@@ -1,0 +1,19 @@
+{
+  "name": "wintech-html",
+  "version": "1.0.0",
+  "description": "wintech-html",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manoj-k-crest/wintech-html.git"
+  },
+  "author": "windowstechies",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manoj-k-crest/wintech-html/issues"
+  },
+  "homepage": "https://github.com/manoj-k-crest/wintech-html#readme"
+}
