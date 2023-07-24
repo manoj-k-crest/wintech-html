@@ -1,6 +1,5 @@
 import insert from "../utils/insert.json" assert { type: "json" };
 import { API_URL } from "./config.js";
-console.log(API_URL,"url");
 const problemContent = document.querySelector(insert?.problemContent);
 const fixContent = document.querySelector(insert?.fixContent);
 const detailContent = document.querySelector(insert?.detailContent);
@@ -16,6 +15,14 @@ function generateMarkup(data, parentEl) {
   const p = document.createElement("p");
   p.style.marginBottom = "8px";
   p.innerText = data;
+  if(parentEl === fixContent) {
+    const a = document.createElement("a");
+    a.href = "https://windowstechies.com/go/fortect-repairtool/";
+    a.classList.add("xid");
+    a.innerText = "Click here to download.";
+    a.style.marginLeft = "5px"
+    p.appendChild(a)
+  }
   parentEl.appendChild(p);
 }
 
@@ -64,7 +71,6 @@ elSelectCustoms.forEach((elSelectCustom) => {
       elSelectCustom.classList.remove("isActive");
       const data = elOption.getAttribute("data-value");
       inpuLanguage.value = data;
-      console.log(errName, data, "det");
       getAnswer(errName, data);
     });
   });
