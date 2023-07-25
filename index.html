@@ -235,7 +235,7 @@
   </head>
 
   <body>
-    <div class="loading">Loading&#8230;</div>
+    <!-- <div class="loading">Loading&#8230;</div> -->
     <!-- Google Tag Manager (noscript) -->
     <noscript
       ><iframe
@@ -257,10 +257,16 @@
             <form class="selectWrapper">
               <input value="ge" type="hidden" name="language" id="language" />
               <div class="selectCustom js-selectCustom">
-                <div class="selectCustom__trigger" data-value="english">English</div>
+                <div class="selectCustom__trigger" data-value="english">
+                  English
+                </div>
                 <div class="selectCustom__options">
-                  <div class="selectCustom__option" data-value="german">German</div>
-                  <div class="selectCustom__option" data-value="french">French</div>
+                  <div class="selectCustom__option" data-value="german">
+                    German
+                  </div>
+                  <div class="selectCustom__option" data-value="french">
+                    French
+                  </div>
                   <div class="selectCustom__option" data-value="spanish">
                     Spanish
                   </div>
@@ -275,7 +281,7 @@
       </header>
       <div class="auto__container">
         <div class="secure">
-          <h1 id="headtitle">
+          <h1 id="headtitle" class="loading">
             How to Fix
             <span class="getParam capitalize" data-key="file">PC</span> Errors
           </h1>
@@ -295,7 +301,11 @@
               <a href="#"><span class="os_name">Windows</span></a>
             </li>
             <li><a href="#">Errors</a></li>
-            <li><span class="getParam capitalize" data-key="file" id="error">PC</span></li>
+            <li>
+              <span class="getParam capitalize" data-key="file" id="error"
+                >PC</span
+              >
+            </li>
           </ul>
           <a
             href="https://windowstechies.com/go/fortect-repairtool/"
@@ -377,7 +387,7 @@
             <div class="about__header">
               <h3>What is the Problem?</h3>
             </div>
-            <div class="about__body" id="whatsproblem">
+            <div class="about__body loading" id="whatsproblem">
               <p>
                 Your computer may be missing important system files. The
                 <span class="getParam capitalize" data-key="file">PC</span>
@@ -389,7 +399,7 @@
             <div class="about__header">
               <h3>How to Fix</h3>
             </div>
-            <div class="about__body" id="howtofix">
+            <div class="about__body loading" id="howtofix">
               <p>
                 Fortect is specifically designed to detect and repair most PC
                 problems, making it ideal for troubleshooting a
@@ -410,56 +420,56 @@
               </div>
               <h3>
                 What is a
-                <span class="getParam capitalize" data-key="file" id="error">PC</span>
+                <span class="getParam capitalize" data-key="file" id="error"
+                  >PC</span
+                >
                 error in detail?
               </h3>
             </div>
-            <div class="about__body" id="givedetails">
-              <p style="margin-bottom: 8px"
-                >A
+            <div class="about__body loading" id="givedetails">
+              <!-- <p style="margin-bottom: 8px">
+                A
                 <span class="getParam capitalize" data-key="file">PC</span>
                 error can exist if one or more of the following symptoms appear:
-                <ul class="bullets">
-                  <li>
-                    <strong
-                      >Freezing (so-called “Freeze”) of the application or the
-                      entire system.</strong
-                    >
-                    This means that neither your application nor the operating
-                    system reacts to your mouse clicks or other commands. The
-                    freeze is usually only short-lived before your system goes
-                    back to normal operation.
-                  </li>
-                  <li>
-                    <strong
-                      >Application crashes or the entire system crashes.</strong
-                    >
-                    The application or the operating system does not respond to
-                    any of your commands and you have no way of restoring normal
-                    operation. All that remains is to close the application or
-                    reboot your system.
-                  </li>
-                  <li>
-                    <strong
-                      >Your system reboots randomly and without your
-                      prompting</strong
-                    >
-                  </li>
-                  <li>
-                    <strong
-                      >Problems installing or uninstalling software</strong
-                    >
-                  </li>
-                  <li>
-                    <strong>Connection problems</strong> which you cannot solve,
-                    even by adjusting the network settings.
-                  </li>
-                  <li>
-                    <strong>Other error messages</strong> or a BSOD (so-called
-                    "blue death"/"blue screen of death" and "stop errors")
-                  </li>
-                </ul>
               </p>
+              <ul class="bullets">
+                <li>
+                  <strong
+                    >Freezing (so-called “Freeze”) of the application or the
+                    entire system.</strong
+                  >
+                  This means that neither your application nor the operating
+                  system reacts to your mouse clicks or other commands. The
+                  freeze is usually only short-lived before your system goes
+                  back to normal operation.
+                </li>
+                <li>
+                  <strong
+                    >Application crashes or the entire system crashes.</strong
+                  >
+                  The application or the operating system does not respond to
+                  any of your commands and you have no way of restoring normal
+                  operation. All that remains is to close the application or
+                  reboot your system.
+                </li>
+                <li>
+                  <strong
+                    >Your system reboots randomly and without your
+                    prompting</strong
+                  >
+                </li>
+                <li>
+                  <strong>Problems installing or uninstalling software</strong>
+                </li>
+                <li>
+                  <strong>Connection problems</strong> which you cannot solve,
+                  even by adjusting the network settings.
+                </li>
+                <li>
+                  <strong>Other error messages</strong> or a BSOD (so-called
+                  "blue death"/"blue screen of death" and "stop errors")
+                </li>
+              </ul> -->
             </div>
             <div class="about__header">
               <div class="about__header-tick">
@@ -467,12 +477,14 @@
               </div>
               <h3>
                 What causes a
-                <span class="getParam capitalize" data-key="file" id="error">PC</span>
+                <span class="getParam capitalize" data-key="file" id="error"
+                  >PC</span
+                >
                 error?
               </h3>
             </div>
-            <div class="about__body" id="whatcauses">
-              <p style="margin-bottom: 8px">This error can be caused by:</p>
+            <div class="about__body loading" id="whatcauses">
+              <!-- <p style="margin-bottom: 8px">This error can be caused by:</p>
               <ul class="bullets">
                 <li>
                   Entries in the registry (left over from various applications)
@@ -490,7 +502,7 @@
                 attacks can also cause computer problems, as can manual changes
                 in the registry or poor software uninstallations by
                 inexperienced users.
-              </p>
+              </p> -->
             </div>
             <div class="about__header">
               <div class="about__header-tick">
@@ -498,12 +510,14 @@
               </div>
               <h3>
                 How is a
-                <span class="getParam capitalize" data-key="file" id="error">PC</span>
+                <span class="getParam capitalize" data-key="file" id="error"
+                  >PC</span
+                >
                 repaired?
               </h3>
             </div>
-            <div class="about__body" id="howtorepair">
-              <p>
+            <div class="about__body loading" id="howtorepair">
+              <!-- <p>
                 If you have broad computer knowledge, you could fix
                 <span class="os_name">Windows</span> problems yourself by
                 modifying the registry, removing keycodes that are invalid or
@@ -518,7 +532,7 @@
                 abilities, you should use specially developed software that
                 guarantees safe repairs and does not require any special
                 knowledge for the treatment of computer or system errors.
-              </p>
+              </p> -->
             </div>
             <div class="about__header">
               <div class="about__header-tick">
@@ -744,61 +758,79 @@
 
     <script>
       // Get the OS version
-    let OSName = 'Windows';
+      let OSName = "Windows";
       let userAgent = window.navigator.userAgent,
-          platform = window.navigator.platform,
-          macosPlatforms = ['Macintosh ', 'MacIntel ', 'MacPPC ', 'Mac68K '],
-          windowsPlatforms = ['Win32 ', 'Win64 ', 'Windows ', 'WinCE '],
-          iosPlatforms = ['iPhone ', 'iPad ', 'iPod '],
-          os = null;
+        platform = window.navigator.platform,
+        macosPlatforms = ["Macintosh ", "MacIntel ", "MacPPC ", "Mac68K "],
+        windowsPlatforms = ["Win32 ", "Win64 ", "Windows ", "WinCE "],
+        iosPlatforms = ["iPhone ", "iPad ", "iPod "],
+        os = null;
 
       if (window.navigator.userAgent.indexOf("Windows NT 10.0") != -1) {
-          navigator.userAgentData.getHighEntropyValues(["platformVersion"])
-              .then(ua => {
-                  if (navigator.userAgentData.platform === "Windows") {
-                      const majorPlatformVersion = parseInt(ua.platformVersion.split('. ')[0]);
-                      if (majorPlatformVersion >= 13) {
-                          OSName = "Windows 11"
-                          document.querySelectorAll(".os_name").forEach((el) => el.innerHTML = OSName)
-                          document.getElementById("os_img").src = "./src/assets/windows-10-compatible-small.png"
-                      } else {
-                          OSName = "Windows 10";
-                          document.querySelectorAll(".os_name").forEach((el) => el.innerHTML = OSName)
-                          document.getElementById("os_img").src = "./src/assets/windows-10-compatible-small.png"
-                      }
-                  }
-              });
+        navigator.userAgentData
+          .getHighEntropyValues(["platformVersion"])
+          .then((ua) => {
+            if (navigator.userAgentData.platform === "Windows") {
+              const majorPlatformVersion = parseInt(
+                ua.platformVersion.split(". ")[0]
+              );
+              if (majorPlatformVersion >= 13) {
+                OSName = "Windows 11";
+                document
+                  .querySelectorAll(".os_name")
+                  .forEach((el) => (el.innerHTML = OSName));
+                document.getElementById("os_img").src =
+                  "./src/assets/windows-10-compatible-small.png";
+              } else {
+                OSName = "Windows 10";
+                document
+                  .querySelectorAll(".os_name")
+                  .forEach((el) => (el.innerHTML = OSName));
+                document.getElementById("os_img").src =
+                  "./src/assets/windows-10-compatible-small.png";
+              }
+            }
+          });
       } else if (window.navigator.userAgent.indexOf("Windows NT 6.2") != -1) {
-          OSName = "Windows 8";
-          document.getElementById("os_img").src = "../../assets/img/os_logos/windows-8-compatible-small.png"
-
+        OSName = "Windows 8";
+        document.getElementById("os_img").src =
+          "../../assets/img/os_logos/windows-8-compatible-small.png";
       } else if (window.navigator.userAgent.indexOf("Windows NT 6.1") != -1) {
-          OSName = "Windows 7";
-          document.getElementById("os_img").src = "../../assets/img/os_logos/windows-7-compatible-small.png"
-
+        OSName = "Windows 7";
+        document.getElementById("os_img").src =
+          "../../assets/img/os_logos/windows-7-compatible-small.png";
       } else if (window.navigator.userAgent.indexOf("Windows NT 6.0") != -1) {
-          OSName = "Windows Vista";
-          document.getElementById("os_img").src = "../../assets/img/os_logos/windows-vista-small.png"
-
+        OSName = "Windows Vista";
+        document.getElementById("os_img").src =
+          "../../assets/img/os_logos/windows-vista-small.png";
       } else if (window.navigator.userAgent.indexOf("Windows NT 5.1") != -1) {
-          OSName = "Windows XP";
-          document.getElementById("os_img").src = "../../assets/img/os_logos/windows-xp-compatibility-small.png"
+        OSName = "Windows XP";
+        document.getElementById("os_img").src =
+          "../../assets/img/os_logos/windows-xp-compatibility-small.png";
       }
 
-        document.querySelectorAll(".os_name").forEach((el) => el.innerHTML = OSName)
+      document
+        .querySelectorAll(".os_name")
+        .forEach((el) => (el.innerHTML = OSName));
 
       if (window.navigator.userAgent.indexOf("Mac") != -1) {
-          OSName = "Mac/iOS";
-          document.getElementById("os_compat").innerHTML = "Oh, we're sorry! Unfortunately, our repair program is NOT compatible with your current operating system.";
-          document.getElementById("os_img").src = "../../assets/img/os_logos/apple-logo-small.png"
+        OSName = "Mac/iOS";
+        document.getElementById("os_compat").innerHTML =
+          "Oh, we're sorry! Unfortunately, our repair program is NOT compatible with your current operating system.";
+        document.getElementById("os_img").src =
+          "../../assets/img/os_logos/apple-logo-small.png";
       } else if (/Android/.test(userAgent)) {
-          OSName = "Android";
-          document.getElementById("os_compat").innerHTML = "Oh, we're sorry! Unfortunately, our repair program is NOT compatible with your current operating system.";
-          document.getElementById("os_img").src = "../../assets/img/os_logos/android-logo-small.png"
+        OSName = "Android";
+        document.getElementById("os_compat").innerHTML =
+          "Oh, we're sorry! Unfortunately, our repair program is NOT compatible with your current operating system.";
+        document.getElementById("os_img").src =
+          "../../assets/img/os_logos/android-logo-small.png";
       } else if (!os && /Linux/.test(platform)) {
-          OSName = "Linux";
-          document.getElementById("os_compat").innerHTML = "Oh, we're sorry! Unfortunately, our repair program is NOT compatible with your current operating system.";
-          document.getElementById("os_img").src = "../../assets/img/os_logos/linux-logo-small.png"
+        OSName = "Linux";
+        document.getElementById("os_compat").innerHTML =
+          "Oh, we're sorry! Unfortunately, our repair program is NOT compatible with your current operating system.";
+        document.getElementById("os_img").src =
+          "../../assets/img/os_logos/linux-logo-small.png";
       }
       document.getElementById("your_os").innerHTML = OSName;
     </script>
