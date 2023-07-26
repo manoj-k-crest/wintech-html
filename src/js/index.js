@@ -47,7 +47,7 @@ async function uploadJsonFile(errName, lang) {
     });
   } catch (err) {
     console.log(err);
-    throw err;
+    throw err
   }
 }
 
@@ -74,12 +74,15 @@ async function getAnswer(errName, lang, templateName, domEl) {
       } else {
         generateMarkup(result, domElement);
       }
-    } else {
+    } else if(result === undefined && data.status === 429) {
+      throw new Error(
+        "Too many requests from your IP, please try again after an hour"
+      );
+    } else{
       return result;
     }
     domElement.classList.remove("loading");
   } catch (err) {
-    console.error(err);
     throw err;
   }
 }
@@ -232,8 +235,8 @@ async function init(errName, lang) {
       }
     }
   } catch (error) {
-    console.log(error);
-    throw error;
+   alert(error);
+   loaders.forEach((loader) => loader.classList.remove("loading"));
   }
 }
 
