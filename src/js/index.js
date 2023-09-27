@@ -424,6 +424,9 @@ const prompts = [
 if (errName) {
   main(errName, defaultLanguage, prompts);
 } else {
-  loaders.forEach((loader) => loader.classList.remove("loading"));
+  loaders.forEach((loader) => {
+    loader.classList.remove("loading");
+    loader.classList.add("px");
+  });
   defaultText();
 }
